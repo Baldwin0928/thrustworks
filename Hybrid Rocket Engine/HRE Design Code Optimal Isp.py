@@ -72,7 +72,7 @@ CEA_OF_STEP = 0.20
 G0 = 9.80665
 DEBUG = True
 
-# Same efficiency treatment you were using
+# Efficiency factors to apply to CEA ideal performance for more realistic estimates
 ETA_CSTAR = 0.90
 ETA_CF = 0.90
 
