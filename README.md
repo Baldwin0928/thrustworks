@@ -1,4 +1,6 @@
 # thrustworks
 Hybrid and liquid rocket engine solvers, design tools, and codes for analysis. 
 Consider the repo part of my engineering portfolio that can be very handy for those who 
-frequently needs to analyze data from a hotfire result or design an engine from the ground up. 
+frequently needs to analyze data from a test result or design an engine from the ground up.
+I am currently working on slowly transferring my own codes over to this repo after a bit of touch-up
+so things are likely not up-to-date.
