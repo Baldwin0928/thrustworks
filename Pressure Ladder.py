@@ -1336,6 +1336,7 @@ def launch_gui() -> None:
 
     def refresh_component_tree() -> None:
         component_tree.delete(*component_tree.get_children())
+        component_tree.heading("length", text=f"Length {length_unit.get()}")
         for index, spec in enumerate(component_specs, start=1):
             label = COMPONENT_CATALOG[spec.catalog_key]["label"]
             length_text = "" if spec.length_m is None else f"{length_from_m(spec.length_m):g}"
@@ -2101,7 +2102,7 @@ def launch_gui() -> None:
     component_tree.heading("name", text="Name")
     component_tree.heading("type", text="Type")
     component_tree.heading("qty", text="Qty")
-    component_tree.heading("length", text="Length m")
+    component_tree.heading("length", text=f"Length {length_unit.get()}")
     component_tree.heading("details", text="Details")
     component_tree.column("#", width=44, anchor="center", stretch=False)
     component_tree.column("name", width=220)
